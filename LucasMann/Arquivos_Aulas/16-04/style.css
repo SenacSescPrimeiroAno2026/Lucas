@@ -1,0 +1,43 @@
+.container{
+    width: 400px;
+    height: 200px;
+    background-color: lightgray;
+}
+h1{
+    background-color: aqua;
+}
+.texto_h1{
+    color: red;
+}
+p{
+    font-size: 40px;
+}
+.p1, .t1{
+    color: purple;
+}
+.p2{
+    color: green;
+}
+.t1{
+    font-size: 50px;
+}
+.div2{
+    color: white;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+}
+#id_div1{
+    background-color: yellow;
+    color: red;
+}
+.botao{
+    background-color: cyan;
+    color: black;
+    width: 400px;
+    height: 60px;
+    border-radius: 22px;
+    border: 1px dashed black;
+    font-size: 30px;
+    
+}

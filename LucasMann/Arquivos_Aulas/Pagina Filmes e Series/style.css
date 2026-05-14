@@ -1,0 +1,36 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.container{  
+    font-family: Arial, Helvetica, Sans-serif;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color: rgb(155, 152, 152);
+   
+}       
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}   
+
+p{
+    font-size: 20px;
+}
+img{
+    border: 3px solid black;
+    border-radius: 20px;
+
+}
+.top_3{
+    font-family: Arial, Helvetica, Sans-serif;
+    text-align: center; 
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(129, 127, 127);
+}

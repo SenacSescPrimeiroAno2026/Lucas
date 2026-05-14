@@ -1,0 +1,91 @@
+.container {
+    font-family: Arial, Helvetica, Sans-serif;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: dimgray;
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.jogos {
+    font-family: Arial, Helvetica, Sans-serif;
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: dimgray;
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+body {
+    background-color: lightcyan;
+    margin: 0;
+    padding: 0;
+}
+
+.img {
+    border-radius: 6px;
+    border: 5px solid #333;
+    max-width: 100%;
+    height: auto;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 10px 10px;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+.barra {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.barra h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.barra a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.barra a:hover {
+    color: #00ff88;
+    text-decoration: underline;
+}

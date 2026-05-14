@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, Helvetica, Sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-display: 60px;
+    font-size: 60px;
+}
+
+form{
+    font-size: 60px;
+    text-align: center;
+}
+input{
+    font-size: 60px;
+    text-align: center;
+}   
+input[type="radio"]{
+    transform: scale(3);
+}
+input[type="checkbox"]{
+    transform: scale(3);
+}

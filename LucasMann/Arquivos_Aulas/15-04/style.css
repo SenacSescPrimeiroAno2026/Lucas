@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(44, 40, 40);
+    color: white;
+}
+ol{
+    color:red
+}
+ul,li{
+    color: cyan
+}
+dl{
+    color:yellow
+}
+li,dt{
+    font-size: 32px;
+}
+.div1{
+    background-color: green;
+}
+.div_pai{
+    background-color: red;
+    width:400px;
+    margin:auto;
+}
+.div2{
+    border:1px solid white;
+    background-color: yellow;
+    color:black;
+    display:inline-block;
+    
+}
+.div3{
+    border:1px solid white;
+    background-color:orange;
+    color:black;
+    display: inline-block;
+}

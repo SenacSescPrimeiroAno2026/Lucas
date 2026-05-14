@@ -1,0 +1,66 @@
+/*CSS é uado para realizar modificações e estilizações dos elementos do nosso html*/
+
+h1{
+    font-size: 60px;
+    color: red;
+}
+
+p{
+    text-align: center;
+}
+/*Ao ultilizar o css temos a propiedade e o valor, color: red; - color é a propiedade e red o valor, e sempre encerramos com ponto e virgula ;*/
+
+/*Seletores*/
+/*Seletores são ultilizados para "encontrar" ou selecionar os elementos HTML que queremos estilizar*/
+/*Quando queremos estilizar algum elemento do HTML usamos o seletor no css, no caso podemos chamar o p{} dentro do css e realizar a alteração que queremos ou precisamos*/
+.titulo{
+    font-size: 20px;
+    background-color: pink;
+}
+/*Quando usamos . estamos usando um seletor que chama uma classe dentro do meu HTML*/
+/*Class podemos usar em diversos elementos*/
+
+#primeiro_texto{
+    color: purple;
+    background-color: gray;
+}
+/*Quando usamos # estamos usando um seletor que chama um id dentro do meu HTML*/
+/*id usamos apenas um por elemento*/
+
+div{
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+div.h3_textos{
+    background-color: orange;
+    opacity: 0.3;
+}
+
+/* Quando chamamos uma div.h3 vamos alterar apenas as divs que tenham a class h3_textos, outros elementos que não forem div e tiverem a class h3_textos não sofrem alterações*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+/*o * é um seletor universal, ou seja, quando estilizo usando ele, vai ser aplicado estilo em todos os elementos*/
+
+h1, h2, h3{
+    font-family: Papyrus;
+    font-size: 40px;
+    color: red;
+}
+/*Para usar seletores de forma agrupada, eu chamos ele e sepero por virgula,assim consigo usar varios seletores para uma mesma alteração, isso é chamado de agrupamento de seletores*/
+.margem{
+    margin: 100px 40px 20px 10px;
+}
+/*Usamos os elementos de margem temos 4 tipos, margin-top, margin-right, margin- bootom e margin-left
+quando eu ultilizo apenas margin:30px; estou aplicando a margem em todos os sentidos, top, right, bottom e left
+margin:auto; ocupa a margem do elemento pai
+quando uso margin: 50px 50px; o primeiro valor é referente a top e bottom o segundo valor é referente a right e left
+quando uso margin: 50px 20px 10px; o primeiro valor é referente a top segundo valor é referente ao left e right  e o terceiro valor é referente ao bottom
+quando uso margin: 80px 40px 20px 10px; o primeiro valor é referente a top segundo valor é referente a right  e o terceiro valor é referente ao bottom e o teceiro valor referente a left
+
+*/
+

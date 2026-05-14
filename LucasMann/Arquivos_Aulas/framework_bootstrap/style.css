@@ -1,0 +1,14 @@
+
+        .partida {
+        background: #464646;
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .partida p { margin: 0; display: inline; }
+    
+    .direita { float: right; }
+    .ganhou { color: #00ff00; }
+    .perdeu { color: #ff4444; }

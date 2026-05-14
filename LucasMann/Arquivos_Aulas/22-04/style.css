@@ -1,0 +1,16 @@
+.h1{
+        width: 400px;
+    height: 200px;
+    background-color: lightgray;
+}
+.container{
+display: block;
+text-align: center;
+justify-self: center;
+margin: auto;
+width: 80%;
+}
+section{
+    width: 60%;
+    margin:auto
+}

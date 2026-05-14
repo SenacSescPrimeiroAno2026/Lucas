@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <!--
+    Sitema de grid do BootStrap usa 6 classes para definir o número de colunas em diferentes tamanho de tela:
+    .col - disporsitivos expra pequenos - largura inferior a tela inferior a 576px
+    .col-sm - dispositivos pequenos - largura da tela superior a 576px
+    .col-md - dispositivos médios - largira de tela superior a 768px
+    .col-lg - dispositivos grandes - largura de tela superior a 992px
+    .col-xl - dispositivos extra grandes - largura de tela superior a 1200
+    .col-xxl - dispositivos extra grandes largura de tela superior a 1400
+
+    row - é a classe que define uma linha dentro do sitema de grid. Ela é usada para agrupar colunas e garantir que elas sejam alinhas corretamente. As colunas dentro de uma linha são definidas usando as classes mencionadas acima, como .col, .col-sm
+    -->
+    <div class="container-fluid mt-3">
+        <h1>Grids</h1>
+        <div class="row">
+            <div class="col-sm-3 p-3 bg-primary text-white">Col-sm</div>
+            <div class="col-sm-3 p-3 bg-dark text-white">Col-sm</div>
+            <div class="col-sm-3 p-3 bg-primary text-white">Col-sm</div>
+            <div class="col-sm-3 p-3 bg-dark text-white">Col-sm</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 p-3 bg-primary text-white">Col-sm</div>
+            <div class="col-md-3 p-3 bg-dark text-white">Col-sm</div>
+            <div class="col-md-3 p-3 bg-primary text-white">Col-sm</div>
+            <div class="col-md-3 p-3 bg-dark text-white">Col-sm</div>
+            
+        </div>  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

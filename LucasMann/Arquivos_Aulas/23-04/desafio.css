@@ -1,0 +1,35 @@
+h1{
+    background-color: #0d6efd;padding: 20px;
+    font-size: 37px;
+    color: red;
+    font-family: Arial, sans-serif;
+}
+body{
+    margin: 0;
+    line-height: 1.5;   
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+
+    
+}
+h1{
+    margin: 0;
+    padding: 52px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-around; 
+  gap: 10px;
+}
+h3{
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin-block-start: 52;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+
+}
+
+    
+p{
+        margin-block-start: -20px;
+}
