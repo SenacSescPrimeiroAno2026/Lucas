@@ -84,4 +84,56 @@ body{
     gap: 20px;
     padding: 40px 20px;
 }
+/* Container que centraliza o perfil na tela */
+.container-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); /* Ocupa a tela quase inteira descontando a barra */
+    padding: 20px;
+}
 
+/* Cartão de apresentação do Lucas */
+.cartao-perfil {
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 40px 20px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Círculo para a sua foto */
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50; /* Fundo verde com as iniciais */
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+
+.cartao-perfil h1 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+}
+
+.subtitulo {
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.biografia {
+    color: #b3b3b3;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
