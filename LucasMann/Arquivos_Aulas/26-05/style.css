@@ -1,0 +1,110 @@
+body {
+    margin: 0px;
+    background-color: #1A1B2F;
+    font-family: sans-serif; /* Remove a fonte padrão serifada do navegador */
+}
+
+.cabecalho {
+    background-color: rgb(66, 80, 81);
+    border: 1px solid black;
+    border-radius: 0px 0px 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px 20px;          
+    display: flex;
+    justify-content: center;     
+    align-items: center;            
+    gap: 40px;                   
+}
+
+
+.cabecalho a {
+    color: #ffffff ; 
+    text-decoration: none ;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.cabecalho a:hover {
+    color: #09ff19 
+}
+
+.container {    
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;    
+    margin: 20px;
+    padding: 25px;           
+}
+
+.container h1 {
+    margin-top: 0;               
+    font-size: 2rem;
+}
+
+.container p {
+    line-height: 1.5;           
+    color: #dddddd;
+}
+
+.container {
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box ;
+    margin: 20px;
+}
+
+.tr,th {
+    border: 1px solid black;    
+}
+
+button {
+    background-color: rgba(9, 255, 25, 0.315);
+    border: 2px solid #409b3e;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #9195e3;
+    height: auto;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none; 
+    color: white; 
+    background-color: rgba(9, 255, 25, 0.315);
+    border: 2px solid #409b3e;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: rgba(9, 255, 25, 0.6);
+}
+
+
+
+
+.tabela-programacao th, 
+.tabela-programacao td {
+    border: 1px solid #444;       
+    padding: 12px 15px;           
+    text-align: left;            
+}
+
