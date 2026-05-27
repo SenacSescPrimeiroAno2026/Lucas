@@ -11,16 +11,16 @@ h1{
 }
 
 form{
-    font-size: 60px;
+    font-size: 20px;
     text-align: center;
 }
 input{
-    font-size: 60px;
+    font-size: 20px;
     text-align: center;
 }   
 input[type="radio"]{
-    transform: scale(3);
+    transform: scale(1);
 }
 input[type="checkbox"]{
-    transform: scale(3);
+    transform: scale(1);
 }
