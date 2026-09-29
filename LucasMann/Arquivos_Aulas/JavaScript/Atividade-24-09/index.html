@@ -1,0 +1,69 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mural Digital Senac</title>
+        <link rel="stylesheet" href="style.css?v=2">
+
+    </head>
+    <body>
+    <header class="main-header"> 
+        <div class="logo-area"> 
+            <i class="fa-solid fa-chalkboard-user header-icon"></i> 
+            <h1>Mural Digital <span>Senac</span></h1> 
+        </div> 
+        <p class="subtitle">Conectando ideias, alunos e profissionais</p> 
+    </header> 
+
+    <div class="container-mural"> 
+        <div class="formulario"> 
+            <label for="nome">Seu Nome:</label> 
+            <input type="text" id="nome" placeholder="Digite seu nome"> 
+            <label for="profissao">Assunto / Profissão:</label> 
+            <input type="text" id="profissao" placeholder="Digite seu assunto"> 
+            <label for="cidade">Cidade:</label> 
+            <input type="text" id="cidade" placeholder="Digite sua cidade"> 
+            <label for="descricao">Descrição:</label> 
+            <input type="text" id="descricao" placeholder="Digite uma descrição"> 
+        <div class="botoes-container">
+            <button id="visualizar" type="button">Visualizar</button>
+            <button id="publicar" type="button">Publicar</button>
+        </div>
+
+
+
+        </div> 
+
+        <div class="Respostas"> 
+            <h2>Pré-Visualização:</h2> 
+            <h3>Nome do usuário:</h3> 
+            <p class="nomePerfil"></p> 
+            <h3>Assunto:</h3> 
+            <p class="profissaoPerfil"></p> 
+            <h3>Cidade:</h3> 
+            <p class="cidadePerfil"></p> 
+            <h3>Descrição:</h3> 
+            <p class="descricaoPerfil"></p> 
+        </div> 
+    </div> 
+
+
+    <div class="container-inferior">
+        <div class="Respostas"> 
+            <h2>Publicado:</h2> 
+            <h3>Nome do usuário:</h3> 
+            <p class="nomePublicado"></p> 
+            <h3>Assunto:</h3> 
+            <p class="profissaoPublicado"></p> 
+            <h3>Cidade:</h3> 
+            <p class="cidadePublicado"></p> 
+            <h3>Descrição:</h3> 
+            <p class="descricaoPublicado"></p> 
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+
+    </body>
+    </html>

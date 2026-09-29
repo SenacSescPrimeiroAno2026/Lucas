@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Dinâmico - Lucas Mann</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="profile-avatar" id="avatarContainer">
+               <h1>👤</h1>
+            </div>
+        </div>
+
+        <div class="profile-body">
+            <h2 class="profile-name" id="profileName">Lucas Mann</h2>
+            <p class="profile-role" id="profileRole">Estudante de programação</p>
+            <p class="profile-bio" id="profileBio">Sou estudante do SESC Santa Cruz do Sul, faço curso do técnico em parceria com o SENAC, gosto de programação, jogos e futebol.</p>
+        </div>
+
+        <div class="formulario">
+            <h2>Editar Perfil</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+
+            <label for="profissao">Profissão:</label>
+            <input type="text" id="profissao" placeholder="Digite sua profissão">
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" placeholder="Digite sua cidade">
+
+            <label for="descricao">Descrição:</label>
+            <textarea id="descricao" placeholder="Digite uma descrição"></textarea>
+
+            <button id="atualizar">Atualizar perfil</button>
+        </div>
+
+        <div class="perfil">
+            <h2 class="nomePerfil">Lucas Mann</h2>
+            <p class="profissaoPerfil">Estudante de programação</p>
+            <p class="cidadePerfil">Santa Cruz do Sul</p>
+            <p class="descricaoPerfil">Sou estudante do SESC Santa Cruz do Sul, faço curso do técnico em parceria com o SENAC...</p>
+        </div>
+    </div>
+
+    <script>
+        const inputNome = document.getElementById('nome');
+        const inputProfissao = document.getElementById('profissao');
+        const inputCidade = document.getElementById('cidade');
+        const inputDescricao = document.getElementById('descricao');
+        const botaoAtualizar = document.getElementById('atualizar');
+
+        const profileName = document.getElementById('profileName');
+        const profileRole = document.getElementById('profileRole');
+        const profileBio = document.getElementById('profileBio');
+
+        const nomePerfil = document.querySelector('.nomePerfil');
+        const profissaoPerfil = document.querySelector('.profissaoPerfil');
+        const cidadePerfil = document.querySelector('.cidadePerfil');
+        const descricaoPerfil = document.querySelector('.descricaoPerfil');
+
+        botaoAtualizar.addEventListener('click', () => {
+            
+            if (inputNome.value.trim() !== "") {
+                profileName.textContent = inputNome.value;
+                nomePerfil.textContent = inputNome.value;
+            }
+            
+            if (inputProfissao.value.trim() !== "") {
+                profileRole.textContent = inputProfissao.value;
+                profissaoPerfil.textContent = inputProfissao.value;
+            }
+            
+            if (inputCidade.value.trim() !== "") {
+                cidadePerfil.textContent = inputCidade.value;
+            }
+            
+            if (inputDescricao.value.trim() !== "") {
+                profileBio.textContent = inputDescricao.value;
+                descricaoPerfil.textContent = inputDescricao.value;
+            }
+            
+            // Limpa os campos após a atualização
+            inputNome.value = "";
+            inputProfissao.value = "";
+            inputCidade.value = "";
+            inputDescricao.value = "";
+        });
+    </script>
+</body>
+</html>

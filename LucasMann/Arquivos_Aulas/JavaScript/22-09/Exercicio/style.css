@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 380px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-header {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 4px solid #fdfdfd;
+    background-color: #7ba2d8;
+    position: absolute;
+    top: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-body {
+    padding: 70px 24px 32px 24px;
+    text-align: center;
+}
+
+.profile-name {
+    color: #f8fafc;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.profile-role {
+    color: #38bdf8;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.profile-bio {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.formulario {
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.formulario h2 {
+    color: #f8fafc;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.formulario label {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.formulario input, 
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #f8fafc;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.formulario input:focus, 
+.formulario textarea:focus {
+    border-color: #38bdf8;
+}
+
+.formulario textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.formulario button:hover {
+    opacity: 0.9;
+}
+
+.perfil {
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.perfil h2 {
+    font-size: 1.1rem;
+    color: #38bdf8;
+    margin-bottom: 8px;
+}
+
+.perfil p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    color: #94a3b8;
+    line-height: 1.4;
+}

@@ -1,0 +1,167 @@
+body { 
+    background: linear-gradient(135deg, #002d5a 0%, #004587 100%); 
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif; 
+    color: #ffffff; 
+    margin: 0; 
+    padding: 0; 
+    min-height: 100vh; 
+}
+
+.main-header { 
+    background: linear-gradient(135deg, #002d5a 0%, #004587 100%); 
+    padding: 40px 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    border-bottom: 4px solid #f7941d; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.main-header h1 { 
+    margin: 0; 
+    font-size: 2.4rem; 
+    font-weight: 700; 
+    letter-spacing: -0.5px; 
+    color: #ffffff; 
+}
+
+.main-header h1 span { 
+    color: #f7941d; 
+}
+
+.subtitle { 
+    margin: 0; 
+    color: #a0aec0; 
+    font-size: 1.1rem; 
+    font-weight: 300; 
+}
+
+.container-mural { 
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    gap: 40px; 
+    margin: 30px auto; 
+    padding: 0 20px; 
+    max-width: 800px;
+}
+
+.container-inferior {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.formulario, .Respostas, .respostas { 
+    width: 100%; 
+    max-width: 380px; 
+    padding: 20px; 
+    background-color: #2b5c8f !important; 
+    border-radius: 8px; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+    box-sizing: border-box; 
+}
+
+.container-mural .formulario, 
+.container-mural .Respostas,
+.container-mural .respostas {
+    flex: 1;
+}
+
+.container-inferior .Respostas,
+.container-inferior .respostas {
+    max-width: 800px; 
+    flex: 1;          
+}
+
+.formulario label { 
+    display: block; 
+    text-align: left; 
+    margin-top: 15px; 
+    font-size: 0.9rem; 
+    font-weight: 500; 
+    color: #e0ebf5; 
+}
+
+.formulario input { 
+    width: 100%; 
+    padding: 12px; 
+    margin-top: 6px; 
+    box-sizing: border-box; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 6px; 
+    font-size: 0.95rem; 
+    color: white;
+}
+
+input::placeholder { 
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+.formulario button { 
+    width: 100%; 
+    padding: 14px; 
+    margin-top: 25px; 
+    background-color: #f7941d; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 6px; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    cursor: pointer;
+}
+
+.formulario button:hover { 
+    background-color: #a96411; 
+}
+
+.formulario button:active { 
+    transform: scale(0.98); 
+}
+
+.Respostas, .respostas { 
+    text-align: left; 
+}
+
+.Respostas h2, .respostas h2 { 
+    text-align: center; 
+    margin: 0 0 20px 0; 
+    font-size: 1.3rem; 
+    color: white; 
+    border-bottom: 2px solid #ffffff !important; 
+    padding-bottom: 10px; 
+}
+
+.Respostas h3, .respostas h3 { 
+    margin: 15px 0 5px 0; 
+    font-size: 1.05rem; 
+    color: #ffffff; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6) !important; 
+    padding-bottom: 5px; 
+}
+
+.Respostas p, .respostas p { 
+    color: #e0ebf5; 
+    margin: 5px 0 15px 0; 
+    font-size: 0.95rem; 
+    min-height: 20px; 
+}
+.formulario button {
+    width: 48%; 
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.botoes-container {
+    display: flex;
+    gap: 15px; 
+    width: 100%;
+}
+
+.botoes-container button {
+    flex: 1; 
+}
