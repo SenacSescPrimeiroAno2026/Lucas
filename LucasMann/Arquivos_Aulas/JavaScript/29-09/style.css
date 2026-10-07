@@ -1,133 +1,205 @@
+/**
+ * ============================================================================
+ * CONFIGURAÇÃO GLOBAL E RESET
+ * Aplica regras universais para garantir consistência entre diferentes navegadores.
+ * ============================================================================
+ */
+
+/* O seletor asterisco (*) engloba absolutamente todos os elementos HTML da página. */
 * {
+    /* Altera o Box Model (modelo de caixa) padrão do navegador. O valor 'border-box' faz com que 
+       o padding (espaçamento interno) e a border (borda) sejam incluídos no cálculo do tamanho 
+       total de largura (width) e altura (height) do elemento, evitando que ele "estoure" o layout. */
     box-sizing: border-box;
 }
 
+
+/**
+ * ============================================================================
+ * ESTILIZAÇÃO DA BASE DA PÁGINA (BODY)
+ * Define as propriedades visuais macro e tipográficas do projeto.
+ * ============================================================================
+ */
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0;       /* Remove a margem externa padrão que os navegadores adicionam nas bordas da página. */
+    padding: 0;      /* Remove qualquer preenchimento interno inicial do corpo do documento. */
+    
+    /* Define uma lista de fontes organizadas por prioridade. Se o sistema do usuário não tiver Arial, 
+       tentará Helvetica, e por fim usará qualquer fonte padrão sem serifa (sans-serif) disponível. */
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eeeeee;
-    color: #222222;
+    
+    background-color: #eeeeee; /* Define a cor de fundo da página inteira como um cinza bem claro. */
+    color: #222222;            /* Define a cor padrão dos textos como um tom de cinza escuro (quase preto). */
 }
 
+
+/**
+ * ============================================================================
+ * ESTRUTURA VISUAL: TOPO (HEADER) E RODAPÉ (FOOTER)
+ * Define a identidade visual dos blocos fixos superior e inferior.
+ * ============================================================================
+ */
 header {
-    text-align: center;
-    padding: 30px;
-    background-color: #2c3e50;
-    color: #ffffff;
+    text-align: center;       /* Alinha horizontalmente todos os textos e elementos internos no centro. */
+    padding: 30px;            /* Adiciona um espaçamento interno de 30 pixels em todas as quatro direções. */
+    background-color: #2c3e50; /* Aplica um tom clássico de azul escuro (Palette Flat UI) ao fundo do topo. */
+    color: #ffffff;           /* Define a cor de todas as fontes dentro do cabeçalho como branco puro. */
 }
 
+/* Alvo específico: Aplica regras de espaçamento apenas na tag h1 que esteja aninhada dentro de um header. */
 header h1 {
-    margin-bottom: 5px;
+    margin-bottom: 5px;       /* Reduz o espaço em branco abaixo do título para aproximá-lo do parágrafo subtítulo. */
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2c3e50;
-    color: #ffffff;
-    margin-top: 40px;
+    text-align: center;       /* Centraliza o texto de direitos autorais e copyright. */
+    padding: 20px;            /* Define um espaçamento interno para dar respiro ao texto do rodapé. */
+    background-color: #2c3e50; /* Mantém a consistência visual usando o mesmo azul escuro do cabeçalho. */
+    color: #ffffff;           /* Define o texto do rodapé como branco. */
+    margin-top: 40px;         /* Empurra o rodapé para baixo, criando uma margem externa superior de 40px em relação ao bloco de cima. */
 }
 
+
+/**
+ * ============================================================================
+ * CONTAINER PRINCIPAL (MAIN)
+ * Limita e centraliza o conteúdo de conteúdo da tela.
+ * ============================================================================
+ */
 main {
-    max-width: 500px;
-    margin: auto;
-    padding: 30px;
+    max-width: 500px;         /* Limita a largura máxima do conteúdo a 500px, impedindo que ele se estique demais em telas grandes. */
+    margin: auto;             /* Truque de layout: calcula automaticamente as margens esquerda e direita, centralizando o container na tela. */
+    padding: 30px;            /* Cria um espaçamento interno para que o conteúdo não cole nas bordas em dispositivos móveis. */
 }
 
+
+/**
+ * ============================================================================
+ * SEÇÃO DO FORMULÁRIO DE CADASTRO
+ * Estilização dos elementos que capturam a entrada de dados.
+ * ============================================================================
+ */
 .formulario {
-    max-width: 500px;
-    margin: 0 auto 30px auto;
-    padding: 25px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    max-width: 500px;         /* Garante que o bloco do formulário não ultrapasse 500px de largura. */
+    
+    /* Configura as margens externas em ordem (Shorthand): Topo=0px, Direita=auto, Base=30px, Esquerda=auto. 
+       Isso centraliza o formulário horizontalmente e o afasta da seção que vem abaixo. */
+    margin: 0 auto 30px auto; 
+    
+    padding: 25px;            /* Espaçamento interno para afastar os inputs e textos da borda da caixa branca. */
+    background-color: #ffffff; /* Define o fundo da caixa do formulário como branco puro. */
+    border-radius: 10px;      /* Arredonda os quatro cantos da caixa do formulário em 10 pixels. */
 }
 
+/* Alvo específico: Título h2 que esteja exclusivamente dentro de um elemento com a classe .formulario. */
 .formulario h2 {
-    margin-top: 0;
+    margin-top: 0;            /* Remove a margem superior padrão do h2 para que ele se alinhe perfeitamente no topo interno da caixa. */
 }
 
 label {
-    display: block;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
+    display: block;           /* Modifica o comportamento do elemento de inline para bloco, forçando-o a ocupar a linha toda e empurrar o input para baixo. */
+    margin-top: 15px;         /* Cria um espaço de afastamento em relação ao campo input anterior. */
+    margin-bottom: 5px;       /* Cria um pequeno espaço entre o texto da etiqueta e a caixa onde o usuário digita. */
+    font-weight: bold;        /* Aplica o estilo negrito à fonte das etiquetas para dar destaque. */
 }
 
+/* Seleciona simultaneamente todas as tags input e textarea do documento. */
 input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
+    width: 100%;              /* Força os campos a ocuparem 100% da largura disponível do container pai (.formulario). */
+    padding: 10px;            /* Espaçamento interno confortável para o texto digitado não encostar nas bordas da caixa. */
+    border: 1px solid #cccccc; /* Cria uma borda fina de 1 pixel, do tipo sólida e de cor cinza clara. */
+    border-radius: 5px;       /* Suaviza as pontas dos inputs arredondando-as com 5 pixels. */
 }
 
 textarea {
-    height: 100px;
-    resize: vertical;
+    height: 100px;            /* Define uma altura inicial fixa de 100 pixels para a caixa de descrição. */
+    resize: vertical;         /* Restringe o redimensionamento manual do usuário (arrastar com o mouse) apenas para o sentido vertical, impedindo que quebrem a largura do layout. */
 }
 
-.botoes {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+
+/**
+ * ============================================================================
+ * ÁREA DOS BOTÕES DE AÇÃO
+ * Layout flexível para posicionamento dos botões.
+ * ============================================================================
+ */
+.botoes{
+    display: flex;            /* Ativa o modelo CSS Flexbox neste container, permitindo alinhar e distribuir os filhos facilmente. */
+    gap: 10px;                /* Cria um espaçamento automático e fixo de 10 pixels entre os botões, sem precisar de margens manuais. */
+    margin-top: 20px;         /* Afasta o grupo de botões do campo de descrição acima. */
 }
 
 button {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: #ffffff;
-    font-size: 14px;
+    flex: 1;                  /* Regra do Flexbox: faz com que ambos os botões cresçam igualmente e dividam o espaço disponível na mesma proporção (50% cada). */
+    padding: 12px;            /* Espaçamento interno vertical e horizontal do botão. */
+    border: none;             /* Remove a borda padrão com aspecto tridimensional que os navegadores colocam em botões. */
+    border-radius: 5px;       /* Arredonda os cantos do botão. */
+    cursor: pointer;          /* Altera o ponteiro do mouse para o ícone de "mãozinha" ao passar por cima, indicando que o elemento é clicável. */
+    background-color: #3498db; /* Define a cor de fundo como um azul vibrante. */
+    color: #ffffff;           /* Coloca a cor do texto do botão em branco. */
+    font-size: 14px;          /* Define o tamanho da fonte do texto do botão. */
 }
 
+/* Pseudo-classe :hover. Aplica as regras abaixo apenas quando o usuário passa o cursor do mouse sobre o botão. */
 button:hover {
-    background-color: #217dbb;
+    background-color: #217dbb; /* Escurece o tom de azul, gerando um efeito visual de feedback ao usuário de que o elemento está focado. */
 }
 
+
+/**
+ * ============================================================================
+ * MENSAGEM DE ERRO (FEEDBACK)
+ * Estilização exclusiva do ID JavaScript para notificações.
+ * ============================================================================
+ */
 #mensagemErro {
-    color: red;
-    font-weight: bold;
-    margin-top: 15px;
+    color: red;               /* Define a cor do texto como vermelho para denotar alerta/erro. */
+    font-weight: bold;        /* Destaca a mensagem em negrito. */
+    margin-top: 15px;         /* Afasta a mensagem de erro do bloco de botões localizado acima. */
 }
 
+
+/**
+ * ============================================================================
+ * ELEMENTOS DOS CARDS (PRÉVIA E CATÁLOGO)
+ * Componentização e estrutura visual do formato de cartão do produto.
+ * ============================================================================
+ */
 .previa {
-    max-width: 500px;
-    margin: 30px auto;
+    max-width: 500px;         /* Mantém o alinhamento visual limitando a área de preview em 500px de largura. */
+    margin: 30px auto;        /* Centraliza a seção horizontalmente e aplica margens de 30px no topo e na base. */
 }
 
 .previa h2 {
-    text-align: center;
+    text-align: center;       /* Centraliza o título da seção de pré-visualização. */
 }
 
 .card {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    border-left: 5px solid #3498db;
+    background-color: #ffffff; /* Fundo branco para contrastar com o cinza (#eeeeee) do fundo da página. */
+    padding: 20px;            /* Espaçamento interno para que as informações do produto fiquem bem organizadas. */
+    border-radius: 10px;      /* Cantos arredondados seguindo o padrão do formulário. */
+    border-left: 5px solid #3498db; /* Adiciona uma borda grossa decorativa de 5 pixels apenas no lado esquerdo do card com a cor azul. */
 }
 
 .card h3 {
-    margin-top: 0;
+margin-top: 0;            /* Zera a margem superior nativa do h3 para manter o alinhamento simétrico dentro do card. */
 }
 
 .card p {
-    margin-bottom: 8px;
+margin-bottom: 8px;       /* Cria um pequeno espaçamento inferior para que as linhas de informações (Preço, Categoria) não fiquem coladas. */
 }
-
 .catalogo {
-    margin-top: 40px;
+margin-top: 40px;         /* Cria um grande espaçamento acima da seção do catálogo de produtos cadastrados. */
 }
-
 .catalogo h2 {
-    text-align: center;
+text-align: center;       /* Centraliza o título da seção final. */
 }
-
-#listaitens {
-    display: grid;
+#listaItens {
+    display: grid;            /* Ativa o sistema de layout em grade (CSS Grid) */
+    
+    /* Cria colunas responsivas automáticas que têm no mínimo 250px e no máximo 1 fração do espaço */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    
+    gap: 20px;                /* Cria um espaçamento de 20px entre cada card da lista */
+    margin-top: 20px;         /* Empurra a lista 20px para baixo em relação ao título */
 }

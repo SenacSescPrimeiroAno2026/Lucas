@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Define a codificação de caracteres padrão (UTF-8) para aceitar acentos e cedilha -->
     <meta charset="UTF-8">
+    <!-- Configura a responsividade da página, garantindo que ela se adapte a telas de celulares e tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vincula o arquivo de estilização externa (CSS) para dar design à página -->
     <link rel="stylesheet" href="style.css">
+    <!-- Título da página que aparece na aba do navegador -->
     <title>Catalogo interativo</title>
 </head>
 <body>
-
+    <!-- Cabeçalho principal do site -->
     <header>
         <h1>Catalogo interativo</h1>
         <p>Cadastre novos produtos utilizando javascript e DOM</p>
     </header>
 
+    <!-- Área de conteúdo principal da aplicação -->
     <main>
+        <!-- Seção responsável pelo formulário de entrada de dados -->
         <section class="formulario">
             <h2>Cadastrar Produto</h2>
-            <label for="nome">Nome do Produto:</label>
-            <input type="text" id="nome" placeholder="Digite o nome do produto">
             
+            <!-- Rótulo e campo de texto para capturar o nome do produto (ID referenciado no script por #nome) -->
+            <label for="nome">Nome do Produto:</label>
+            <input type="text" id="nome" placeholder="Digite o nome do produto">    
+            
+            <!-- Rótulo e campo de texto para a categoria (ID referenciado no script por #categoria) -->
             <label for="categoria">Categoria:</label>
             <input type="text" id="categoria" placeholder="Digite a categoria do produto">
             
+            <!-- Rótulo e campo numérico para o preço (ID referenciado no script por #preco) -->
             <label for="preco">Preço:</label>
             <input type="number" id="preco" placeholder="Digite o preço">
             
+            <!-- Rótulo e caixa de texto de múltiplas linhas para a descrição (ID referenciado no script por #descricao) -->
             <label for="descricao">Descrição:</label>
             <textarea id="descricao" placeholder="Digite a descrição do produto"></textarea>
             
+            <!-- Agrupador dos botões de ação do formulário -->
             <div class="botoes">
+                <!-- Botão que dispara a função visualizarItem() ao ser clicado (ID #visualizar) -->
                 <button id="visualizar">Visualizar</button>
-                <button id="Adicionar">Adicionar ao catálogo</button>
+                <!-- Botão que dispara a função adicionarItem() ao ser clicado (ID #adicionar) -->
+                <button id="adicionar">Adicionar ao catálogo</button> 
             </div>
+            
+            <!-- Elemento de texto inicialmente vazio para exibir alertas de erro e validação (ID #mensagemErro) -->
             <p id="mensagemErro"></p>
         </section>
 
+        <!-- Seção destinada a exibir o espelhamento temporário (preview) dos dados -->
         <section class="previa">
             <h2>Pré-visualização</h2>
+            <!-- Estrutura base do cartão que reflete visualmente o CSS da classe ".card" -->
             <div class="card">
-                <h3 id="visualnome">Nome do Produto</h3>
-                <p id="visualcategoria">Categoria: </p>
-                <p id="visualpreco">R$ 0,00</p>
-                <p id="visualdescricao">Descrição: </p>
+                <!-- Elementos de texto modificados via innerText pela função visualizarItem() -->
+                <h3 id="visualNome">Nome do Produto</h3>
+                <p id="visualCategoria">Categoria: </p>
+                <p id="visualPreco">R$ 0,00</p>
+                <p id="visualDescricao">Descrição: </p>
             </div>
         </section>
-        
+
+        <!-- Seção que armazena a listagem definitiva dos itens inseridos -->
         <section class="catalogo">
             <h2>Produtos Cadastrados</h2>
-            <div id="listaitens"></div>
+            <!-- Div container que funcionará como repositório onde a função adicionarItem() vai injetar os novos cards gerados dinamicamente via appendChild (ID #listaItens) -->
+            <div id="listaItens"></div>
         </section>
     </main>
 
+    <!-- Rodapé da página com informações de direitos autorais -->
     <footer>
         <p>&copy; 2026 - Catalogo interativo</p>
     </footer>
 
+    <!-- Importação do script JavaScript externo para controlar toda a lógica de comportamento e manipulação do DOM da página -->
     <script src="script.js"></script>
 </body>
 </html>
+
