@@ -11,7 +11,7 @@
 <body>
     <header>
         <br>
-        <h1>Revisao para Prova</h1>
+        <h1>Concessionária de carros</h1>
         <br>
     </header>
     <main>
@@ -21,24 +21,22 @@
             <label for="nome">Nome do Carro:</label>
             <input type="text" id="nome" placeholder="Digite o nome do carro">
 
-            <label for="Categoria">Categoria do Carro</label>
+            <label for="categoria">Categoria do Carro</label>
             <input type="text" id="categoria" placeholder="Digite a Categoria do carro">
 
             <label for="preco">Preço:</label>
             <input type="number" id="preco" placeholder="Digite o valor do carro">
             <br>
             <label for="descricao">Descrição</label>
-            <textarea type="descricao" placeholder="Digite a Descrição"></textarea>
-
+            <textarea id="descricao" placeholder="Digite a Descrição"></textarea>
             <div class="botoes">
                 <button id="visualizar">Visualizar</button>
                 <button id="adicionar">Adicionar</button>
             </div>
             <p id="mensagemErro"></p>
         </section>
-            <h2>Pré-visualização</h2>
         <section class="previa">
-
+            <h2>Pré-visualização</h2>
             <div class="card">
                 <h3 id="visualNome">Nome do carro</h3>
                 <p id="visualCategoria">Categoria: </p>
@@ -46,13 +44,17 @@
                 <p id="visualDescricao">Descrição: </p>
             </div>
         </section>
-    </main>
-            
         <section class="catalogo">
         <h2>Produtos Cadastrados</h2>
-            <div id="listaItens"></div>
+        <div id="listaItens"></div>
         </section>
+        
+    </main>
 
+ 
+    <footer>
+        <p>Lucas Mann - 2026</p>
+    </footer> 
 
     <script src="script.js"></script>
 </body>
