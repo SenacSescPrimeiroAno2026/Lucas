@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão para a Prova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <header>
+        <br>
+        <h1>Concessionária de carros</h1>
+        <br>
+    </header>
+    <main>
+ 
+        <section class="formulario">
+            <h2>Carros</h2>
+            <label for="nome">Nome do Carro:</label>
+            <input type="text" id="nome" placeholder="Digite o nome do carro">
+ 
+            <label for="categoria">Categoria do Carro</label>
+            <input type="text" id="categoria" placeholder="Digite a Categoria do carro">
+ 
+            <label for="preco">Preço:</label>
+            <input type="number" id="preco" placeholder="Digite o valor do carro">
+            <br>
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" placeholder="Digite a Descrição"></textarea>
+            <div class="botoes">
+                <button id="visualizar">Visualizar</button>
+                <button id="adicionar">Adicionar</button>
+            </div>
+            <p id="mensagemErro"></p>
+        </section>
+        <section class="previa">
+            <h2>Pré-visualização</h2>
+            <div class="card">
+                <h3 id="visualNome">Nome do carro</h3>
+                <p id="visualCategoria">Categoria: </p>
+                <p id="visualPreco">R$ 0,00</p>
+                <p id="visualDescricao">Descrição: </p>
+            </div>
+        </section>
+        <section class="catalogo">
+        <h2>Produtos Cadastrados</h2>
+        <div id="listaItens"></div>
+        </section>
+        
+    </main>
+ 
+ 
+    <footer>
+        <p>Lucas Mann - 2026</p>
+    </footer>
+ 
+    <script src="script.js"></script>
+</body>
+ 
+</html>
