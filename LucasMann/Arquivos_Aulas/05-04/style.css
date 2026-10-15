@@ -10,15 +10,15 @@ color:green;
 
 a:visited{
 color: orange;
-background-color: transparent:
+background-color: transparent;
 text-decoration: underline;
 }
 
 a:hover{
 color:red;
-{
+}
 
 a:active{
 color: red;
-background-color: yellow
+background-color: yellow;
 }
